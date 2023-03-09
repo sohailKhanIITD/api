@@ -91,7 +91,7 @@ class PrivateRecipeApiTests(TestCase):
         serializer = RecipeDetailSerializer(recipe)
         self.assertEqual(res.data, serializer.data)
 
-    def test_Create_recipe(self):
+    def test_create_recipe(self):
         """Test creating recipe"""
         payload = {
             'title': 'sample',
