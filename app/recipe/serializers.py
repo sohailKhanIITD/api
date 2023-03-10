@@ -17,4 +17,5 @@ class RecipeSerializer(serializers.ModelSerializer):
 class RecipeDetailSerializer(RecipeSerializer):
     """Seirlizer for recipe serial view"""
     class Meta(RecipeSerializer.Meta):
-        fields = RecipeSerializer.Meta.fields = ['description']
+        fields = RecipeSerializer.Meta.fields + ['description']
+        
